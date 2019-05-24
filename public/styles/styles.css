@@ -1,3 +1,17 @@
-.list-group-item {
-  line-height: 2.5;
-}
+.parallax-containerImg {
+  height: 400px;
+  }
+  
+    .secBreadcrumbs {
+        text-transform: uppercase;
+        font-weight: bold;
+  
+    }
+  
+    #bgContain {
+        background-color: #eceff1;
+    }
+  
+    #bgContain-5 {
+        background-color: #0d47a1;
+    }
