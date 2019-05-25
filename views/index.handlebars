@@ -1,423 +1,284 @@
 {{!-- <!-- Header --> --}}
 <nav class="black">
-    <div class="nav-wrapper container">
-        <a href="/" class="brand-logo">NightRiders MC</a>
-        <ul class="right hide-on-med-and-down">
-            <li id="navAbout" class="hoverable"><a href="#">About Us</a></li>
-            <li id="navStarted" class="hoverable"><a href="#">Get Started</a></li>
-            <li id="navFind" class="hoverable"><a href="#">Find My Trip</a></li>
-        </ul>
-    </div>
+  <div class="nav-wrapper container">
+    <a href="/" class="brand-logo">NightRiders MC</a>
+    <ul class="right hide-on-med-and-down">
+      <li id="navAbout" class="hoverable"><a href="#" 
+target="_blank">About Us</a></li>
+      <li id="navStarted" class="hoverable"><a href="#">Get Started</a></li>
+      <li id="navFind" class="hoverable"><a href="#">Find My Trip</a></li>
+    </ul>
+  </div>
 </nav>
-
 {{!-- <!-- Content --> --}}
 <div class="parallax-container center valign-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 white-text">
-                <h3 class="blue-text blue-text text-darken-4">No planning, just riding.</h3>
-                <p>Are you a veteran rider, new to the MC scene, or just looking to meet with fellow lovers of the open
-                    road. <br> Join <strong>Night Rider’s MC</strong> for the opportunity of a lifetime. </p>
-                <br>
-                <a class="waves-effect waves-light btn-large blue darken-4">Get Started</a>
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 white-text">
+        <h3 class="blue-text blue-text text-darken-4">No planning, just riding.</h3>
+        <p>Are you a veteran rider, new to the MC scene, or just looking to meet with fellow lovers of the open
+          road. <br> Join <strong>Night Rider’s MC</strong> for the opportunity of a lifetime. </p>
+        <br>
+          <button data-target="modal1" class="btn modal-trigger waves-effect waves-light btn-large blue darken-4">Get Started</button>
+      </div>
+    </div>
+    {{!-- <!-- Modal Structure --> --}}
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <h4>Join NightRiders MC</h4>
+    <p>Enter you username and password. If you don't have an account SignUp.</p>
+    <form class="col s12">
+      <div id="signUp_Show" class="row">
+        <div class="input-field col s6">
+          <input id="user_name" type="text" class="validate">
+          <label for="user_name"> Username</label>
         </div>
-    </div>
-    <div class="parallax">
-        <img src="/images/img09_1440x832.jpg">
-    </div>
+        <div class="input-field col s6">
+          <input id="password" type="text" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+
+      <div id="signUp_Hide" class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="user_email" type="text" class="validate">
+          <label for="user_email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
 </div>
+
+  </div>
+  <div class="parallax">
+    <img src="/images/img09_1440x832.jpg">
+  </div>
+</div>
+
+
+{{!-- Trip Cards --}}
+<div class="container">
+  <div class="row">
+        <div class="col s12 center">
+          <br>
+          <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1 ">Our Trips</h6>
+          <br>
+          <h4 class="blue-text blue-text text-darken-4">Featured Trips</h4>
+          <p>Vestibulum lorem sed risus ultricies tristique nulla aliquet.
+            <br> Join to view more trips.</p>
+          <br>
+        </div>
+      </div>
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/img01_1440x832.jpg">
+          <span class="card-title">Las Vegas, Nevada</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am convenient because I
+            require little markup to use effectively.</p>
+
+          <h6 class="text-center mt-2 blue-text"><i class="far fa-clock"></i> 13 Days</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-route"></i> 16,000 Miles</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-road"></i> Smooth Terrain</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-map-marker-alt"></i> Philadelphia</h6>
+
+        </div>
+      </div>
+    </div>
+    {{!-- card Num 2 --}}
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/img02_1440x832.jpg">
+          <span class="card-title">Dallas, Texas</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am convenient because I
+            require little markup to use effectively.</p>
+
+          <h6 class="text-center mt-2 red-text"><i class="far fa-clock"></i> 13 Days</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-route"></i> 16,000 Miles</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-road"></i> Smooth Terrain</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-map-marker-alt"></i> Philadelphia</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {{!-- card Number 3 --}}
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/img03_1440x832.jpg">
+          <span class="card-title">Seattle, Washington</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am convenient because I
+            require little markup to use effectively.</p>
+
+          <h6 class="text-center mt-2 green-text"><i class="far fa-clock"></i> 13 Days</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-route"></i> 16,000 Miles</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-road"></i> Smooth Terrain</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-map-marker-alt"></i> Philadelphia</h6>
+        </div>
+      </div>
+    </div>
+
+    {{!-- card Number 4 --}}
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/img07_1440x832.jpg">
+          <span class="card-title">Wardsville, Missouri</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am convenient because I
+            require little markup to use effectively.</p>
+
+          <h6 class="text-center mt-2 blue-text"><i class="far fa-clock"></i> 13 Days</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-route"></i> 16,000 Miles</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-road"></i> Smooth Terrain</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-map-marker-alt"></i> Philadelphia</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    {{!-- card Number 5 --}}
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/img05_1440x832.jpg">
+          <span class="card-title">Concord, New Hampshire</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am convenient because I
+            require little markup to use effectively.</p>
+
+          <h6 class="text-center mt-2 blue-text"><i class="far fa-clock"></i> 13 Days</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-route"></i> 16,000 Miles</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-road"></i> Smooth Terrain</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-map-marker-alt"></i> Philadelphia</h6>
+        </div>
+      </div>
+    </div>
+
+    {{!-- card Number 6 --}}
+    <div class="col s12 m6">
+      <div class="card">
+        <div class="card-image">
+          <img src="/images/img06_1440x832.jpg">
+          <span class="card-title">Athens, Georgia</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am convenient because I
+            require little markup to use effectively.</p>
+
+          <h6 class="text-center mt-2 blue-text"><i class="far fa-clock"></i> 13 Days</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-route"></i> 16,000 Miles</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-road"></i> Smooth Terrain</h6>
+          <h6 class="text-center mt-2"> <i class="fas fa-map-marker-alt"></i> Philadelphia</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 {{!-- About section Here --}}
 <div id="bgContain">
-    <div class="container">
-        <div class="section grey lighten-3">
-            <div class="row">
-                <div class="col s12 center">
-                    <br>
-                    <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1 ">About Us</h6>
-                    <br>
-                    <h4 class="blue-text blue-text text-darken-4">Ride In 4 Steps</h4>
-                    <p>Vestibulum lorem sed risus ultricies tristique nulla aliquet.
-                        <br> Ut aliquam purus sit lectus magna.</p>
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m3">
-                    <div class="icon-block center">
-                        <a href="https://www.linkedin.com/in/brianna-kelsey-2aaaa6116/" target="_blank"
-                            class="btn-floating blue darken-1 btn-large"><i class="fas fa-map"></i></a>
-                        <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">step One</h6>
-                        <p>Choose your region.</p>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="icon-block center">
-                        <a href="https://www.linkedin.com/in/brianna-kelsey-2aaaa6116/" target="_blank"
-                            class="btn-floating blue darken-1 btn-large"><i class="fas fa-map-marker-alt"></i></a>
-                        <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">step Two</h6>
-                        <p>Choose your destination city.</p>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="icon-block center">
-                        <a href="https://www.linkedin.com/in/brianna-kelsey-2aaaa6116/" target="_blank"
-                            class="btn-floating blue darken-1 btn-large"><i class="fas fa-user-plus"></i></a>
-                        <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">Step Three</h6>
-                        <p>Register your trip.</p>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="icon-block center">
-                        <a href="https://www.linkedin.com/in/brianna-kelsey-2aaaa6116/" target="_blank"
-                            class="btn-floating blue darken-1 btn-large"><i class="fas fa-credit-card"></i></a>
-                        <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">step four</h6>
-                        <p>Submit your payment.</p>
-                    </div>
-                    <br>
-                </div>
-            </div>
+  <div class="container">
+    <div class="section grey lighten-3">
+      <div class="row">
+        <div class="col s12 center">
+          <br>
+          <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1 ">About Us</h6>
+          <br>
+          <h4 class="blue-text blue-text text-darken-4">Ride in 3 Steps</h4>
+          <p>Vestibulum lorem sed risus ultricies tristique nulla aliquet.
+            <br> Ut aliquam purus sit lectus magna.</p>
+          <br>
         </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <a href="#"
+              class="btn-floating blue darken-1 btn-large"><i class="fas fa-user-plus"></i></a>
+            <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">Step One</h6>
+            <p>Register your account.</p>
+          </div>
+        </div>
+         <div class="col s12 m4">
+          <div class="icon-block center">
+            <a href="#"
+              class="btn-floating blue darken-1 btn-large"><i class="fas fa-map"></i></a>
+            <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">step Two</h6>
+            <p>Choose your trip.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <a href="#"
+              class="btn-floating blue darken-1 btn-large"><i class="fas fa-comments"></i></a>
+            <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1">step three</h6>
+            <p>Submit your payment.</p>
+          </div>
+          <br>
+        </div>
+      </div>
     </div>
+  </div>
 </div>
 
 {{!-- Other parallex scroll --}}
 
 <div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="/images/img01_1440x832.jpg" alt="Unsplashed background img 3"></div>
-</div>
-
-{{!-- get started here --}}
-<div id="bgContain-2">
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 center">
-                    <br>
-                    <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1 ">Get started</h6>
-                    <br>
-                    <h4 class="blue-text blue-text text-darken-4">Your Trip Awaits.</h4>
-                    <p>Vestibulum lorem sed risus ultricies tristique nulla aliquet. <br> Ut aliquam purus sit lectus
-                        magna.</p>
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <h4 class="blue-text text-darken-1">Choose Your Region</h4>
-                </div>
-            </div>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-
-                        <div id="trip-02" class="input-field col s12">
-                            <select>
-                                <option value="" disabled selected>Choose a region</option>
-                                <option value="1">West</option>
-                                <option value="2">Midwest</option>
-                                <option value="3">South</option>
-                                <option value="4">Northeast</option>
-                            </select>
-                            <label>What region would you like to rider to?</label>
-                        </div>
-                        <div id="trip-01" class="input-field col s12">
-                            <select>
-                                <option value="" disabled selected>Choose a destination city</option>
-                                <option value="1">name here</option>
-                                <option value="2">name here</option>
-                            </select>
-                            <label>Where would you to go?</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-
-            <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Go
-                <i class="material-icons right">send</i>
-            </button>
-
-        </div>
-    </div>
-</div>
-
-{{!-- trip details show up here --}}
-<div class="parallax-container center valign-wrapper">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 white-text">
-                <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1 ">You selected</h6>
-            </div>
-
-            <div class="col s12 white-text">
-                <h3 class="blue-text blue-text text-darken-4">City, State</h3>
-            </div>
-
-            <div class="col s12 white-text">
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Vivamus arcu felis bibendum ut tristique et egestas quis. Est ante in nibh
-                    mauris cursus. Lacus sed turpis tincidunt id aliquet risus feugiat. Ultricies mi eget mauris
-                    pharetra et.</p>
-                <br>
-
-                <div class="col s12 center">
-                    <a class="btn waves-light blue accent-3 bg-primary btn-lg" href="#" role="button">Single: $750</a>
-                    <a class="btn waves-light blue btn-lg" href="#" role="button">Couple: $550</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="parallax">
-        <img src="/images/img06_1440x832.jpg">
-    </div>
+  <div class="parallax"><img src="/images/img01_1440x832.jpg" alt="Unsplashed background img 3"></div>
 </div>
 
 
-<div id="bgContain-3">
-    <div class="container">
-        <div class="section">
-            <div class="row center">
-                <h4 class="blue-text blue-text text-darken-4">Trip Highlights</h4>
-                <p>Lacus sed turpis tincidunt id aliquet risus feugiat. Ultricies mi eget mauris
-                    pharetra et.</p>
-                <br>
-                <br>
-
-                <div class="col s3">
-                    <a href="https://www.pinterest.com/bkelseyp4ever/" target="_blank"
-                        class="btn-floating  blue accent-3 btn-large"><i class="far fa-clock"></i></a>
-                    <h6 class="text-center mt-2">Duration</h6>
-                    <p class="text-center mt-2">13 Days</p>
-                </div>
-
-                <div class="col s3">
-                    <a href="https://www.pinterest.com/bkelseyp4ever/" target="_blank"
-                        class="btn-floating  blue accent-3 btn-large"><i class="fas fa-route"></i></a>
-                    <h6 class="text-center mt-2">Distance</h6>
-                    <p class="text-center mt-2">13,000 Miles</p>
-                </div>
-
-                <div class="col s3">
-                    <a href="https://www.pinterest.com/bkelseyp4ever/" target="_blank"
-                        class="btn-floating  blue accent-3 btn-large"><i class="fas fa-road"></i></a>
-                    <h6 class="text-center mt-2">Terrain</h6>
-                    <p class="text-center mt-2">Smooth Roads</p>
-                </div>
-
-                <div class="col s3">
-                    <a href="https://www.pinterest.com/bkelseyp4ever/" target="_blank"
-                        class="btn-floating  blue accent-3 btn-large"><i class="fas fa-map-marker-alt"></i></a>
-                    <h6 class="text-center mt-2">Origin</h6>
-                    <p class="text-center mt-2">Philadelphia, PA</p>
-                    <br>
-                    <br>
-                </div>
-
-
-                <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Book
-                    <i class="material-icons right">send</i>
-                </button>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="bgContain">
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 center">
-                    <br>
-                    <h6 class="secBreadcrumbs text-grey grey-text text-lighten-1 ">Get started</h6>
-                    <br>
-                    <h4 class="blue-text blue-text text-darken-4">Your Trip Awaits.</h4>
-                    <p>Vestibulum lorem sed risus ultricies tristique nulla aliquet. <br> Ut aliquam purus sit
-                        lectus
-                        magna.</p>
-                    <br>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s12">
-                    <h4 class="blue-text text-darken-1">Personal Information</h4>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="first_name" type="text" class="validate">
-                                <label for="first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="last_name" type="text" class="validate">
-                                <label for="last_name">Last Name</label>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="phone_number" type="text" class="validate">
-                                <label for="phone_number">Phone Number</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="user_email" type="text" class="validate">
-                                <label for="user_email">Email</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col s12">
-                    <h4 class="blue-text text-darken-1">Motorcycle Information</h4>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="vin_number" type="text" class="validate">
-                                <label for="vin_number">VIN</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="license_plate_number" type="text" class="validate">
-                                <label for="license_plate_number">License Plate Number</label>
-                            </div>
-
-                            <div class="input-field col s12">
-                                <select>
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">Yes, I have Insurance.</option>
-                                    <option value="2">No, I don't have insurance.</option>
-                                </select>
-                                <label>Do you have Insurance?</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col s12">
-                    <h4 class="blue-text text-darken-1">Emergency Contact</h4>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="emg_first_name" type="text" class="validate">
-                                <label for="emg_first_name">First Name</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="emg_last_name" type="text" class="validate">
-                                <label for="emg_last_name">Last Name</label>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="input-field col s6">
-                                <input id="emg_phone_number" type="text" class="validate">
-                                <label for="emg_phone_number">Phone Number</label>
-                            </div>
-                            <div class="input-field col s6">
-                                <input id="emg_email" type="text" class="validate">
-                                <label for="emg_email">Email</label>
-                            </div>
-                            <div class="col s12">
-                                <br>
-                                <label>
-                                    <input type="checkbox" class="filled-in validate" checked="checked" />
-                                    <span>By filling in the circle, you waive your right to file a lawsuit and are
-                                        agreeing to our terms of service.</span>
-                                </label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <div class="col s12">
-                    <br>
-                    <h4 class="blue-text text-darken-1">Personality Assessment</h4>
-                </div>
-                <div class="row">
-                    <form class="col s12">
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea"></textarea>
-                                <label for="textarea1">​What's the furthest you've ever ​driven before?</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea2" class="materialize-textarea"></textarea>
-                                <label for="textarea2">​What's your level of motorcycle knowledge?</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea2" class="materialize-textarea"></textarea>
-                                <label for="textarea2">​Harley Davidson or a Ducati?</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea2" class="materialize-textarea"></textarea>
-                                <label for="textarea2">​Why do you want to join Night Rider's MC?</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <textarea id="textarea2" class="materialize-textarea"></textarea>
-                                <label for="textarea2">​What's the craziest experience you've ever had on the
-                                    road?</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Next
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-{{!-- Other parallex scroll --}}
- 
-
-<div class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="/images/img03_1440x832.jpg" alt="Unsplashed background img 3"></div>
-</div>
 
 <div id="bgContain-5">
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 center">
-                   <br>
-                    <h6 class="secBreadcrumbs text-white white-text text-lighten-1 ">Find my Trip</h6>
-                    <br>
-                    <h4 class="white-text white-text">Your Almost There.</h4>
-                    <p class="white-text white-text">Search for trip by enterning you email address in the text bar.</p>
-
-                    <br>
-                    <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email">Enter Your Email</label>
-                                    
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <br>
+          <h6 class="secBreadcrumbs text-white white-text text-lighten-1 ">Join a Trip</h6>
+          <br>
+          
+          <h4 class="white-text white-text">Your Almost There.</h4>
+          <p class="white-text white-text">Sign in or create an account to explore all of our offerings.</p>
+          
+          <br>
+           <br>
+           <button data-target="modal1" class="btn modal-trigger waves-effect waves-light btn-large blue darken-4">Start Riding</button>
         </div>
+      </div>
     </div>
+  </div>
 </div>
 
 <!-- Script -->

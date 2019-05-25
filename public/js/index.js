@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('.parallax').parallax();
   $('select').formSelect();
+  $('.modal').modal();
 });
 
 // on click button here
@@ -22,3 +23,4 @@ $('html,body').animate({
     scrollTop: $("#bgContain-5").offset().top},
     'slow');
 });
+
