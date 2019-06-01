@@ -66,17 +66,17 @@ module.exports = function (app) {
       });
     }
   });
-  app.get("/api/history/:uvalue",function(req,res){
-   db.trip_details.findAll({
-     include: [{
-       model:db.trip_register,
-       where:[
-         {userId:req.params.uvalue}
-       ]
-     }]
-   }).then(function(data){
-     res.json(data);
-   })
+  app.get("/api/history/:uvalue", function (req, res) {
+    db.trip_details.findAll({
+      include: [{
+        model: db.trip_register,
+        where: [
+          { userId: req.params.uvalue }
+        ]
+      }]
+    }).then(function (data) {
+      res.json(data);
+    })
   })
   app.get("/api/check/:uvalue", function (req, res) {
 
@@ -111,34 +111,37 @@ module.exports = function (app) {
       }
 
     ).then(function () {
-      console.log("sucess");
+      console.log("success");
     })
   })
-  app.put("/api/tripuserDistance/:uvalue",function(req,res){
-   
+  app.put("/api/tripuserDistance/:uvalue", function (req, res) {
+
     db.User.update(
       req.body,
       {
-        where:{
-         id:req.params.uvalue
+        where: {
+          id: req.params.uvalue
         }
       }
-  )});
+    ).then(function(data){
+      res.json(data);
+    });
+  });
   app.get("/api/userDistance/:uvalue", function (req, res) {
     console.log("LOOK HERE CADIN")
     console.log(req.user.distance);
     db.User.findOne({
-        where:
-        {
-          id: req.params.uvalue
-        }
-    }).then(function(data){
+      where:
+      {
+        id: req.params.uvalue
+      }
+    }).then(function (data) {
       res.json(data);
-      console.log(JSON.stringify(data,null,4));
-      
+      console.log(JSON.stringify(data, null, 4));
+
     })
   })
-  
+
 
   app.post("/api/tripregister", function (req, res) {
     console.log(req.body);
@@ -146,9 +149,22 @@ module.exports = function (app) {
       userId: req.body.userId,
       status: req.body.status,
       tripDetailId: req.body.tripDetailId
-
-    }).then(function () {
-      console.log("sucess");
+    }).then(function (data) {
+      res.json(data)
     })
   })
+
+
+  app.put("/api/tripchangeStatus/:trid", function (req, res) {
+    db.trip_register.update({
+      status: 3
+    },
+      {
+        where:
+          { id: req.params.trid }
+      }
+    ).then(function (data) {
+      res.json(data);
+    });
+  });
 };

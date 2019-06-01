@@ -29,8 +29,9 @@ function fnStatus(thisObj) {
 
 
     d1 = data.distance;
+    console.log("data: " + data.distance);
    
-    
+    $("#travelMiles").text(d1);
     var d2 = d1 + total;
   
     $.ajax({
@@ -40,11 +41,23 @@ function fnStatus(thisObj) {
       data: {
         distance: d2
       }
-    }).then(function () {
+    }).then(function (data) {
+      window.location.href="/members";
     
      
     })
   })
+}
+
+function fnNo(thisObj){
+  var trid = thisObj.parentElement.children[0].value;
+  $.ajax({
+    method: "PUT",
+    url: "/api/tripchangeStatus/" + trid
+  }).then(function (data) {
+    window.location.href="/members"
+  })
+  
 }
 
 
@@ -61,7 +74,7 @@ function fnRegister(thisObj) {
     tripDetailId: trip_id
   }).then(function (data) {
     console.log(data);
-    alert("sucessfully registerd");
+    alert("you sucessfully registerd");
   })
 
 
@@ -141,7 +154,7 @@ $(document).ready(function () {
           str += "<br>";
           str += "<button class='btn btn-warning btn-lg font-weight-bold text-uppercase' onClick=fnStatus(this)>Yes</button>";
           str += "&nbsp;";
-          str += "<button class='btn btn-warning btn-lg font-weight-bold text-uppercase' id=btn-no>No</button>";
+          str += "<button class='btn btn-warning btn-lg font-weight-bold text-uppercase' onClick=fnNo(this)>No</button>";
           str += "</div>"
 
         }
@@ -169,8 +182,8 @@ $(document).ready(function () {
       for (i = 0; i < trip.length; i++) {
         str += "<br>";
         str += "<div class='col-sm mt-3 mb-5'>";
-        str += "<input type=hidden value=" + trip[i].id + "h4>";
-        str += "<h4>" + "Destination: " + trip[i].destination + "</h1>";
+        str += "<input type=hidden value=" + trip[i].id + ">";
+        str += "<h4>" + "Destination: " + trip[i].destination + "</h4>";
         str += "<p class='font-weight-bold'>" + "Start Date: " + trip[i].startDate + "</p>";
         str += "<p class='font-weight-bold'>" + "End Date: " + trip[i].endDate + "</p>";
         str += "<p class='font-weight-bold'>" + "Distance: " + trip[i].distance + "</p>";
